@@ -1,13 +1,14 @@
-body {
-    background-color: beige;
-}
-
 * {
     box-sizing: border-box;
 }
 
 h1 {
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+}
+
+body {
+    background-color: beige;
 }
 
 p {
@@ -15,15 +16,11 @@ p {
     margin: 0;
 }
 
-.box {
-    width: 100%;
-}
-
-.option {
+.container {
     border: none;
     margin-left: auto;
-    margin-right: auto;
     margin-top: 10px;
+    margin-right: auto;
     margin-bottom: 10px;
     padding: 10px;
 }
@@ -32,7 +29,7 @@ section {
     border: 1px solid black;
     background-color: white;
     width: 100%;
-    height: 200px;
+    height: auto;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     position: relative;
@@ -81,169 +78,65 @@ section {
     font-size: 125%;
 }
 
-
-/*Desktop*/
-
-@media (min-width: 992px) {
-    .desktop-screen-1,
-    .desktop-screen-2,
-    .desktop-screen-3,
-    .desktop-screen-4,
-    .desktop-screen-5,
-    .desktop-screen-6,
-    .desktop-screen-7,
-    .desktop-screen-8,
-    .desktop-screen-9,
-    .desktop-screen-10,
-    .desktop-screen-11,
-    .desktop-screen-12 {
-        float: left;
-    }
-    .desktop-screen-1 {
-        width: 8.33%;
-    }
-    .desktop-screen-2 {
-        width: 16.66%;
-    }
-    .desktop-screen-3 {
-        width: 25%;
-    }
-    .desktop-screen-4 {
-        width: 33.33%;
-    }
-    .desktop-screen-5 {
-        width: 41.66%;
-    }
-    .desktop-screen-6 {
-        width: 50%;
-    }
-    .desktop-screen-7 {
-        width: 58.33%;
-    }
-    .desktop-screen-8 {
-        width: 66.66%;
-    }
-    .desktop-screen-9 {
-        width: 74.99%;
-    }
-    .desktop-screen-10 {
-        width: 83.33%;
-    }
-    .desktop-screen-11 {
-        width: 91.66%;
-    }
-    .desktop-screen-12 {
-        width: 100%;
-    }
+#chicken-section {
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-
-/*Tablet*/
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .tablet-screen-1,
-    .tablet-screen-2,
-    .tablet-screen-3,
-    .tablet-screen-4,
-    .tablet-screen-5,
-    .tablet-screen-6,
-    .tablet-screen-7,
-    .tablet-screen-8,
-    .tablet-screen-9,
-    .tablet-screen-10,
-    .tablet-screen-11,
-    .tablet-screen-12 {
-        float: left;
-    }
-    .tablet-screen-1 {
-        width: 8.33%;
-    }
-    .tablet-screen-2 {
-        width: 16.66%;
-    }
-    .tablet-screen-3 {
-        width: 25%;
-    }
-    .tablet-screen-4 {
-        width: 33.33%;
-    }
-    .tablet-screen-5 {
-        width: 41.66%;
-    }
-    .tablet-screen-6 {
-        width: 50%;
-    }
-    .tablet-screen-7 {
-        width: 58.33%;
-    }
-    .tablet-screen-8 {
-        width: 66.66%;
-    }
-    .tablet-screen-9 {
-        width: 74.99%;
-    }
-    .tablet-screen-10 {
-        width: 83.33%;
-    }
-    .tablet-screen-11 {
-        width: 91.66%;
-    }
-    .tablet-screen-12 {
-        width: 100%;
-    }
+#beef-section {
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
+#sushi-section {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
 
-/*Mobile*/
+.navbar-brand {
+    font-size: 2em;
+    border: 0px 0px 10px 10px;
+    color: white;
+}
 
-@media (max-width: 767px) {
-    .mobile-screen-1,
-    .mobile-screen-2,
-    .mobile-screen-3 .mobile-screen-4,
-    .mobile-screen-5,
-    .mobile-screen-6,
-    .mobile-screen-7,
-    .mobile-screen-8,
-    .mobile-screen-9,
-    .mobile-screen-10,
-    .mobile-screen-11,
-    .mobile-screen-12 {
-        float: left;
-    }
-    .mobile-screen-1 {
-        width: 8.33%;
-    }
-    .mobile-screen-2 {
-        width: 16.66%;
-    }
-    .mobile-screen-3 {
-        width: 25%;
-    }
-    .mobile-screen-4 {
-        width: 33.33%;
-    }
-    .mobile-screen-5 {
-        width: 41.66%;
-    }
-    .mobile-screen-6 {
-        width: 50%;
-    }
-    .mobile-screen-7 {
-        width: 58.33%;
-    }
-    .mobile-screen-8 {
-        width: 66.66%;
-    }
-    .mobile-screen-9 {
-        width: 74.99%;
-    }
-    .mobile-screen-10 {
-        width: 83.33%;
-    }
-    .mobile-screen-11 {
-        width: 91.66%;
-    }
-    .mobile-screen-12 {
-        width: 100%;
-    }
+#header-nav {
+    border: 0;
+    background-color: coral;
+    color: white;
+}
+
+#nav-menu {
+    color: blue;
+}
+
+.navbar-header button.navbar-toggle,
+.navbar-header .icon-bar {
+    border: 1px solid white;
+}
+
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -30px;
+}
+
+.nav-header {
+    background-color: white;
+}
+
+.nav-brand {
+    color: white;
+    font-size: 1.5em;
+}
+
+#nav-list {
+    color: blue;
+}
+
+hr {
+    border-color: white;
+}
+
+.item {
+    color: white;
+    font-size: 1.2em;
 }

@@ -4,17 +4,65 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Module 2 Assignment</title>
+    <title>Module 3 Assignment</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    <header class="nav-header">
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+
+                    <div class="navbar-brand">
+                        <p class="nav-brand"> Food, LLC</p>
+                    </div>
+
+                    <button type="button" class="navbar-toggle collapsed d-sm-none" data-toggle="collapse" data-target="#nav-menu" aria-expanded="true">
+                        <span class="sr-only"> Toggle Nav</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div id="nav-menu" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right d-block d-sm-none">
+
+                        <li class="text-center">
+                            <a href="#chicken-section">
+                                <p class="item">Chicken</p>
+                            </a>
+                            <hr class="d-block d-sm-none">
+                        </li>
+
+                        <li class="text-center">
+                            <a href="#beef-section">
+                                <p class="item">Beef</p>
+                            </a>
+                            <hr class="d-block d-sm-none">
+                        </li>
+
+                        <li class="text-center">
+                            <a href="#sushi-section">
+                                <p class="item">Sushi</p>
+                            </a>
+                            <hr class="d-block d-sm-none">
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <h1>
         Menu
     </h1>
-    <div class="box">
+    <div class="row container container-fluid">
         <!--Section 1-->
-        <div class="option desktop-screen-4 tablet-screen-6 mobile-screen-12">
+        <div class="col-md-4 col-sm-6 col-xs-12" id="chicken-section">
             <section>
                 <div id="chicken">
                     Chicken
@@ -27,7 +75,7 @@
         </div>
 
         <!--Section 2-->
-        <div class="option desktop-screen-4 tablet-screen-6 mobile-screen-12">
+        <div class="col-md-4 col-sm-6 col-xs-12" id="beef-section">
             <section>
                 <div id="beef">
                     Beef
@@ -40,7 +88,7 @@
         </div>
 
         <!--Section 3-->
-        <div class="option desktop-screen-4 tablet-screen-12 mobile-screen-12">
+        <div class="col-md-4 col-sm-12 col-xs-12" id="sushi-section">
             <section>
                 <div id="sushi">
                     Sushi
@@ -51,8 +99,11 @@
                 </p>
             </section>
         </div>
-
     </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 
